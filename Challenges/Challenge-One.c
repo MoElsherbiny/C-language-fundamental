@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Creating an app that Calculate your Age */
+/* Creating an app that Calculate your born year */
 
 // pseudocode technique
 /*
