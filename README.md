@@ -1,9 +1,12 @@
-## #include <stdio.h>
+# Exercise One
 
-* This is a preprocessor directive to include the header file "stdio.h" in a C program. The "stdio.h" header file provides declarations and definitions for input/output operations in C, such as functions like printf() and scanf().
-* By including this header file, a C program can use these functions to perform input/output operations.
+* print your name in two lines
 
-
-## "int" 
-* is a keyword in C programming language that stands for integer. It is used to define variables or functions that will hold integer values.
-* For example, "int x;" would define a variable named "x" that can hold an integer value.
+ - a hint to print in two lines is using \n after the content or name  
+ - don't forget to use ;  and return 0; 
+  
+## expected  output 
+  ```
+Mohamed
+Elsherbiny
+  ```
