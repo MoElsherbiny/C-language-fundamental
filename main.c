@@ -1,16 +1,8 @@
 #include <stdio.h>
 
-// int main()
-// {
-//     printf("Name : Mohamed Elsherbiny\n");
-//     printf("Age : 28 years old\n");
-//     printf("Gender : male\n");
-//     return 0;
-// }
-
 int main()
 {
-    printf("Name : Mohamed Elsherbiny\nAge : 28 years old\nGender : male\n");
-
+    printf("Iam %d years old\n", 28);
+    printf("My average grade is %.1f\n", 98.4);
     return 0;
 }
