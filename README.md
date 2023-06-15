@@ -1,32 +1,44 @@
-# Format Specification
+# Format Specifications - Practice
 
-In C programming language, format specifiers are used with functions like printf() and scanf() to specify the type and format of data that is being input or output.
+Exercise: Given 10 exercises to practice format specifiers using the "printf" function. Write down what will be printed at each of them and then make sure of that by testing the results in Code::Blocks.
 
-The following are some commonly used format specifiers in C:
+1. `printf("We have %d coins in the bank\n", 100);`
 
-- %d: for integer data type
-- %f: for floating point data type
-- %c: for character data type
-- %s: for string data type
-- %u: for unsigned integer data type
-- %x or %X: for hexadecimal data type
-- %p: for pointer data type
-- %%: to print a percent sign
+   Output: `We have 100 coins in the bank`
+   
+2. `printf("We have %f coins in the bank\n", 125.7);`
 
-For example, to print an integer variable "age" using printf(), we can use the format specifier "%d" as follows:
+   Output: `We have 125.700000 coins in the bank`
+   
+3. `printf("Year = %d\n", 2020);`
 
-```c
-int age = 28;
-printf("My age is: %d\n", age);
-```
-This will print the message "My age is: 28" to the console.
+   Output: `Year = 2020`
+   
+4. `printf("Your average grade is: %f \n", 95.13);`
 
-Similarly, to print a floating point variable "num" with one decimal point using printf(), we can use the format specifier "%.1f" as follows:
+   Output: `Your average grade is: 95.130000`
+   
+5. `printf("num1 = %d, num2 = %d, sum = %d \n", 5, 7, 5+7);`
 
-```c
-float num = 93.7;
-printf("The number is: %.1f\n", num);
-```
-This will print the message "The number is: 93.7" to the console.
+   Output: `num1 = 5, num2 = 7, sum = 12`
+   
+6. `printf("num1 = %f, num2 = %f, sum = %f \n", 5.2, 7.3, 9.5);`
 
-Note that if we use the format specifier "%f" without specifying the number of decimal points, we may get extra decimal places that we don't want. By using the "%.1f" format specifier, we can limit the output to one decimal point.
+   Output: `num1 = 5.200000, num2 = 7.300000, sum = 9.500000`
+   
+7. `printf("num1 = %d, num2 = %d, sub = %d \n", 5, 3, 5-3);`
+
+   Output: `num1 = 5, num2 = 3, sub = 2`
+   
+8. `printf("a = %d, b = %d, sum = a + b = %d \n", 3, 5, 3+5);`
+
+   Output: `a = 3, b = 5, sum = a + b = 8`
+   
+9. `printf("a = %d, b = %d, sum = %d + %d = %d \n", 3, 5, 3, 5, 3+5);`
+
+   Output: `a = 3, b = 5, sum = 3 + 5 = 8`
+   
+10. `printf("a = %d, b = %d, sum = a + b = %d + %d = %d \n", 3, 5, 3, 5, 3+5);`
+
+    Output: `a = 3, b = 5, sum = a + b = 3 + 5 = 8`
+    
