@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**write a program that calculate and prints sum of the sequence
+/**p
  *  a1 =1 , d = 2 , n = 9 , an = 17 ;
  *  to calculate the sum of Arithmetic Sequence
  *
