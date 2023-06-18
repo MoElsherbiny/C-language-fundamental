@@ -19,12 +19,14 @@
 
 int main()
 {
-    float distance, speed, time;
+    int distance, speed;
     printf("Hello Can you give me the distance between the two targets on the map by (km) : ");
-    scanf("%f", &distance);
+    scanf("%d", &distance);
     printf("Can you provide the speed you are going with by (km/hour): ");
-    scanf("%f", &speed);
-    time = (distance / speed) * 60;
-    printf("Here is the expected re-arrival for the specified location: %.fmin\n", time);
+    scanf("%d", &speed);
+    int hours = distance / speed;
+    float speedInMinutes = speed / 60.0;
+    int remainingMinutes = (distance % speed) / speedInMinutes;
+    printf("Here is the expected re-arrival for the specified location: %d hours and %d min\n", hours, remainingMinutes);
     return 0;
 }
