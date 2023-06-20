@@ -72,3 +72,22 @@ So, it would take you 15 minutes to cover the last 5 km at the given speed using
 This approach can be useful when dealing with situations where there is a partial distance or time remaining that cannot be covered in full hours, such as when calculating travel times for a journey with multiple stops.
 
 
+## `The stdlib.h`
+* header file is part of the C standard library and contains declarations for functions and macros that perform general-purpose operations, such as memory allocation, process control, and conversions.
+
+## `#include <math.h>`
+* is a preprocessor directive that tells the C compiler to include the `math.h` header file in the program. The `math.h` header file is part of the C standard library and contains declarations for mathematical functions and macros.
+
+* Some commonly used functions defined in `math.h` include `sin`, `cos`, and `tan` for trigonometric calculations; `exp`, `log`, and `log10` for exponential and logarithmic calculations; `pow` and `sqrt` for power and square root calculations; and `ceil`, `floor`, and `round` for rounding numbers.
+
+* By including the `math.h` header file in a C program, you can use these mathematical functions in your code. Note that you may need to link against the math library when compiling your program by adding the `-lm` flag to the command line when invoking the compiler.
+
+
+## what is GCC
+
+  **GCC stands for **GNU Compiler Collection**. It is a collection of compilers for various programming languages, including C and C++ ⁴. GCC is used to compile source code into executable programs. It takes the source code written in a high-level programming language and translates it into machine code that can be executed by a computer ³. The GNU Compiler Collection was initiated by the Free Software Foundation and is now steered by an independent steering committee ¹**.
+
+
+* (1) gcc command in Linux with examples - GeeksforGeeks. https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/.
+* (2) A detailed explanation of the compiler GCC stages for rookies. https://medium.com/nerd-for-tech/a-detailed-explanation-of-the-compiler-gcc-stages-for-rookies-f768b595933d.
+* (3) Basic Information about GCC - IIT Bombay. https://www.cse.iitb.ac.in/grc/intdocs/gcc-basic-info.html.
