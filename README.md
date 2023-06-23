@@ -66,3 +66,9 @@ int main()
 * Relational operators are used in decision making and loops.
   
    ![Alt text](/images/image2.png)
+
+
+## Quadrant 
+* A quadrant is one of the four regions of the Cartesian coordinate system, which is used to locate points in a two-dimensional plane. The quadrants are numbered counterclockwise starting from the upper right-hand corner, with Quadrant I being the region where both coordinates are positive, Quadrant II being the region where the x-coordinate is negative and the y-coordinate is positive, Quadrant III being the region where both coordinates are negative, and Quadrant IV being the region where the x-coordinate is positive and the y-coordinate is negative. The center of the coordinate system, where both coordinates are 0, is called the origin.
+
+   ![Alt text](/images/quadrant-example.jpg)
