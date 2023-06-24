@@ -1,9 +1,8 @@
-## #include <stdio.h>
+## How while loop works?
+The while loop evaluates the testExpression inside the parentheses ().
+If testExpression is true, statements inside the body of while loop are executed. Then, testExpression is evaluated again.
+The process goes on until testExpression is evaluated to false.
+If testExpression is false, the loop terminates (ends).
 
-* This is a preprocessor directive to include the header file "stdio.h" in a C program. The "stdio.h" header file provides declarations and definitions for input/output operations in C, such as functions like printf() and scanf().
-* By including this header file, a C program can use these functions to perform input/output operations.
 
-
-## "int" 
-* is a keyword in C programming language that stands for integer. It is used to define variables or functions that will hold integer values.
-* For example, "int x;" would define a variable named "x" that can hold an integer value.
+![alt text](images/c-while-loop_0.webp)
