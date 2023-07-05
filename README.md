@@ -167,3 +167,20 @@ Your Final Average is = 88.3
 ```
 
 In conclusion, functions are an essential part of C programming as they help break down complex tasks into smaller, more manageable pieces. A function can either be declared as `void` or with a return type depending on whether it needs to return a value or not. By using functions, developers can make their code more organized, modular, and reusable.
+
+ `fgets`, `stdin`, and `strlen` that you can use
+
+- `fgets` is a function that reads a line from the specified stream and stores it into the string pointed to by str. It stops when either `(n-1)` characters are read, the newline character is read, or the end-of-file is reached, whichever comes first³.
+- `stdin` is the standard input stream, which is used to read input from the keyboard or another input device.
+- `strlen` is a function that computes the length of a string by determining the number of characters that precede the terminating null character⁴.
+
+```markdown
+- `fgets` is a function that reads a line from the specified stream and stores it into the string pointed to by str. It stops when either `(n-1)` characters are read, the newline character is read, or the end-of-file is reached, whichever comes first.
+- `stdin` is the standard input stream, which is used to read input from the keyboard or another input device.
+- `strlen` is a function that computes the length of a string by determining the number of characters that precede the terminating null character.
+```
+
+(1) fgets() and gets() in C language - GeeksforGeeks. https://www.geeksforgeeks.org/fgets-gets-c-language/.
+(2) FIO37-C. Do not assume that fgets() or fgetws() returns a nonempty .... https://wiki.sei.cmu.edu/confluence/display/c/FIO37-C.+Do+not+assume+that+fgets%28%29+or+fgetws%28%29+returns+a+nonempty+string+when+successful.
+(3) string length with fgets function in C - Stack Overflow. https://stackoverflow.com/questions/41572713/string-length-with-fgets-function-in-c.
+(4) c - How to read from stdin with fgets()? - Stack Overflow. https://stackoverflow.com/questions/3919009/how-to-read-from-stdin-with-fgets.
