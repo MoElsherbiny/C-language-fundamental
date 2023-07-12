@@ -35,3 +35,29 @@ int main()
     printf("The Max Digit is %d and it's index is %d \n", maxDigit, index);
     return 0;
 }
+/* Another solution but her the user add the numbers */
+
+/*
+int main()
+{
+    int numbers[7];
+    int maxDigit = 0;
+    int index;
+    for (int i = 0; i < 7; i++)
+    {
+        printf("Enter the Number: %d = ", i+1);
+        scanf("%d", &numbers[i]);
+    }
+    for (int i = 0; i < 7; i++)
+    {
+        if (maxDigit < numbers[i])
+        {
+            maxDigit = numbers[i];
+            index = i;
+        }
+    }
+    printf("The Max Digit is %d and the Index is %d\n", maxDigit, index);
+
+    return 0;
+}
+*/
