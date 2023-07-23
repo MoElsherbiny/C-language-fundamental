@@ -18,6 +18,14 @@
 * By including this header file, a C program can use these functions to perform input/output operations.
 
 
+ * stddef.h – Defines several useful types and macros. 
+ * stdint.h – Defines exact width integer types.
+ * stdio.h – Defines core input and output functions
+* stdlib.h – Defines numeric conversion functions, pseudo-random network generator, and memory allocation
+* string.h – Defines string handling functions
+* math.h – Defines common mathematical functions.
+
+
 ## "int" 
 * is a keyword in C programming language that stands for integer. It is used to define variables or functions that will hold integer values.
 * For example, "int x;" would define a variable named "x" that can hold an integer value.
