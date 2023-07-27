@@ -249,3 +249,114 @@ In this example, we have used a `do...while loop` to prompt the user to enter a 
 So, if the first input is a non-zero number, that number is added to the `sum` variable, and the loop continues to the next iteration. This process is repeated until the user enters 0. But if the first input is 0, there will be no second iteration of the loop, and `sum` becomes 0.0. Finally, outside the loop, we print the value of `sum`.
 
 By using `while loop` and `do...while loop`, we can repeat a block of code until the specified condition is met, which can make our code more efficient and robust.
+
+## C break and continue statements
+
+In C programming, the `break` and `continue` statements are used inside loops to alter the normal flow of the program.
+
+### break statement
+
+The `break` statement is used to immediately terminate a loop (for loop, while loop, or do-while loop). When the `break` statement is encountered inside a loop, the loop is terminated, and the program control continues with the next statement after the loop.
+
+Here is the syntax of the `break` statement:
+
+```
+break;
+```
+
+The `break` statement is usually used with an `if` statement to check for some condition and terminate the loop when the condition is met.
+
+Here is an example program that calculates the sum of a maximum of 10 positive numbers entered by the user. If the user enters a negative number, the loop is terminated using the `break` statement.
+
+```c
+#include <stdio.h>
+
+int main() {
+   int i;
+   double number, sum = 0.0;
+
+   for (i = 1; i <= 10; ++i) {
+      printf("Enter n%d: ", i);
+      scanf("%lf", &number);
+
+      // if the user enters a negative number, break the loop
+      if (number < 0.0) {
+         break;
+      }
+
+      sum += number; // sum = sum + number;
+   }
+
+   printf("Sum = %.2lf", sum);
+
+   return 0;
+}
+```
+
+Output:
+
+```
+Enter n1: 2.4
+Enter n2: 4.5
+Enter n3: 3.4
+Enter n4: -3
+Sum = 10.30
+```
+
+In this example, the loop is terminated when the user enters a negative number. The `break` statement is executed, and the program control continues with the statement after the loop.
+
+### continue statement
+
+The `continue` statement is used to skip the current iteration of a loop and continue with the next iteration. When the `continue` statement is encountered inside a loop, the current iteration is skipped, and the next iteration begins.
+
+Here is the syntax of the `continue` statement:
+
+```
+continue;
+```
+
+The `continue` statement is usually used with an `if` statement to check for some condition and skip the current iteration of the loop when the condition is met.
+
+Here is an example program that calculates the sum of a maximum of 10 numbers entered by the user. If the user enters a negative number, the number is skipped using the `continue` statement.
+
+```c
+#include <stdio.h>
+
+int main() {
+   int i;
+   double number, sum = 0.0;
+
+   for (i = 1; i <= 10; ++i) {
+      printf("Enter a n%d: ", i);
+      scanf("%lf", &number);
+
+      if (number < 0.0) {
+         continue;
+      }
+
+      sum += number; // sum = sum + number;
+   }
+
+   printf("Sum = %.2lf", sum);
+
+   return 0;
+}
+```
+
+Output:
+
+```
+Enter n1: 1.1
+Enter n2: 2.2
+Enter n3: 5.5
+Enter n4: 4.4
+Enter n5: -3.4
+Enter n6: -45.5
+Enter n7: 34.5
+Enter n8: -4.2
+Enter n9: -1000
+Enter n10: 12
+Sum = 59.70
+```
+
+In this example, when the user enters a negative number, the `continue` statement is executed, and the current iteration is skipped. The loop continues with the next iteration.
