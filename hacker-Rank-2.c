@@ -9,15 +9,21 @@
  * The first line prints the character, the second line prints the string, and the third line prints the sentence.
  * ! expected out put
  * * C
- * * Language 
+ * * Language
  * * Welcome To C!!
-*/
+ */
 int main()
 {
-    char ch[100];
-    scanf("%[^\n]%*c", ch);
-    printf("%s \n", ch);
-    printf("Language\n");
-    printf("Welcome To C!!\n");
+    char ch;
+    char str[100];
+    char sen[100];
+
+    scanf("%c", &ch);
+    scanf("%s", str);
+    scanf(" %[^\n]%*c", sen);
+
+    printf("%c\n", ch);
+    printf("%s\n", str);
+    printf("%s\n", sen);
     return 0;
 }
