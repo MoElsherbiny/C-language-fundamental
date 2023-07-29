@@ -360,3 +360,70 @@ Sum = 59.70
 ```
 
 In this example, when the user enters a negative number, the `continue` statement is executed, and the current iteration is skipped. The loop continues with the next iteration.
+
+## Goto Statement in C
+
+The goto statement is a control flow statement in C that allows transferring the control of the program to a labeled statement. Its syntax is as follows:
+
+```
+goto label;
+...
+...
+label: statement;
+```
+
+When the goto statement is encountered, the program control jumps to the labeled statement and starts executing the code from there.
+
+### Example
+
+Here's an example program that uses the goto statement to calculate the sum and average of positive numbers entered by the user:
+
+```c
+#include <stdio.h>
+
+int main() {
+    const int maxInput = 100;
+    int i;
+    double number, average, sum = 0.0;
+
+    for (i = 1; i <= maxInput; ++i) {
+        printf("%d. Enter a number: ", i);
+        scanf("%lf", &number);
+
+        if (number < 0.0) {
+            goto jump;
+        }
+        sum += number;
+    }
+
+jump:
+    average = sum / (i - 1);
+    printf("Sum = %.2f\n", sum);
+    printf("Average = %.2f", average);
+
+    return 0;
+}
+```
+
+### Reasons to Avoid Goto
+
+The use of the goto statement can make the code hard to read and maintain. It can also lead to bugs and errors if not used properly. For example:
+
+```c
+one:
+for (i = 0; i < number; ++i)
+{
+    test += i;
+    goto two;
+}
+two: 
+if (test > 5) {
+  goto three;
+}
+```
+
+Also, the goto statement can allow jumping out of the scope, which can lead to unexpected behavior.
+
+### Should You Use Goto?
+
+In general, it's best to avoid using the goto statement in C as much as possible. It's rarely necessary and can often be replaced with other control structures like loops and conditional statements. However, in some cases, the use of goto can simplify the code and make it more readable. As Bjarne Stroustrup, the creator of C++, famously said, "The fact that 'goto' can do anything is exactly why we don't use it."
